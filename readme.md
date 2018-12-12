@@ -1,5 +1,6 @@
 ## Laravel + CoreUIの利用
 
+# テンプレートの作成手順
 
 ## 準備
 
@@ -98,5 +99,17 @@ auth画面用のテンプレート、authを追加。
 * resources/views/auth/register.blade.php
 * resources/views/auth/passwords/email.blade.php
 * resources/views/auth/passwords/reset.blade.php
+
+# テンプレートの利用（cloneして利用）
+
+```
+git clone
+cd laracore
+composer install
+npm install
+npm run dev
+
+php artisan serve
+```
 
 
