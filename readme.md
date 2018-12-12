@@ -31,21 +31,21 @@ npm install simple-line-icons --save
 
 ### resources/js/bootstrap.js
 
-```
+```diff
 try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
     //+追加
-    require('@coreui/coreui');
++   require('@coreui/coreui');
 
 } catch (e) {}
 ```
 
 ### resources/sass/app.scss
 
-```
+```diff
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
@@ -56,11 +56,11 @@ try {
 @import '~bootstrap/scss/bootstrap';
 
 //+Icons（追加）
-@import '~@fortawesome/fontawesome-free/css/all.min.css';
-@import '~simple-line-icons/css/simple-line-icons.css';
++@import '~@fortawesome/fontawesome-free/css/all.min.css';
++@import '~simple-line-icons/css/simple-line-icons.css';
 
 //+Coreui（追加）
-@import '~@coreui/coreui/dist/css/coreui.min.css';
++@import '~@coreui/coreui/dist/css/coreui.min.css';
 
 // styles(option)
 //@import 'styles.scss';
@@ -70,6 +70,8 @@ try {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
 }
 ```
+
+>自分用のカスタムCSS(SCSS)を一緒にコンパイルしたい場合はresources/sass/styles.scssを追加し、app.scssに@import 'styles.scss'とすれば合わせてコンパルされます。
 
 ### コンパイル
 
