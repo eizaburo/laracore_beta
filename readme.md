@@ -31,14 +31,14 @@ npm install simple-line-icons --save
 
 ### resources/js/bootstrap.js
 
-```
+```diff
 try {
     window.Popper = require('popper.js').default;
     window.$ = window.jQuery = require('jquery');
 
     require('bootstrap');
     //+追加
-    require('@coreui/coreui');
++   require('@coreui/coreui');
 
 } catch (e) {}
 ```
