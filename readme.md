@@ -2,7 +2,7 @@
 
 LaravelとCoreUIを組みわせる方法およびそれを利用した作業テンプレート（ベータ）。
 
-# テンプレート自体の作成手順
+# テンプレート自体の作成手順（概要）
 
 ## 準備
 
@@ -104,7 +104,7 @@ auth画面用のテンプレート、authを追加。
 * resources/views/auth/passwords/email.blade.php
 * resources/views/auth/passwords/reset.blade.php
 
-# テンプレートの利用（cloneして利用）
+# このテンプレートの利用（cloneして利用）
 
 ```
 git clone
