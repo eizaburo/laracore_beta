@@ -36,6 +36,7 @@ try {
     require('bootstrap');
     //+追加
     require('@coreui/coreui');
+
 } catch (e) {}
 ```
 
@@ -97,4 +98,5 @@ auth画面用のテンプレート、authを追加。
 * resources/views/auth/register.blade.php
 * resources/views/auth/passwords/email.blade.php
 * resources/views/auth/passwords/reset.blade.php
+
 
